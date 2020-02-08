@@ -41,7 +41,7 @@ body{
 }
 </style>
 <div id="center">
-  <p>Вашите точки се изчисляват по следната формула:</p>
+  <h1>Вашите точки се изчисляват по следната формула:</h1>
   <p>Между 1 и 3 точки се уможават по 10</p>
   <p>Между 3 и 6 точки се уможават по 100</p>
   <p>Между 6 и 9 точки се уможават по 1000</p>
@@ -65,8 +65,8 @@ function bonusPoints(){
     } else if (points>6 && points<=9) {
         addedPoints=points*1000;
 }
-    document.getElementById("demo").innerHTML =
-    "Вие имате " + addedPoints + " бонус точки";
+    document.getElementById("demo").innerHTML =`<h1>"Вие имате " + addedPoints + " бонус точки"</h1>`
+    
 
     
     let totalPoints = points+addedPoints;    //тест
